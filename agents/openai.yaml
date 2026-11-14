@@ -1,0 +1,4 @@
+interface:
+  display_name: "Poker Pot Odds"
+  short_description: "Generate poker pot-odds practice decks for Anki"
+  default_prompt: "Use $poker-pot-odds to generate 30 poker pot-odds questions and add the deck to my local Anki collection."

@@ -1,0 +1,2396 @@
+{
+  "format_version": 1,
+  "deck": "Poker Pot Odds",
+  "seed": 1122931531982661711,
+  "package": "Poker-Pot-Odds-30-cards.apkg",
+  "notes": [
+    {
+      "guid": "1ae5ccc2898f2e22d1edab24",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 50,
+        "players": [
+          "UTG",
+          "MP",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "UTG",
+            "kind": "bet",
+            "to": 25
+          },
+          {
+            "player": "MP",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "BTN",
+        "kind": "bet"
+      },
+      "question": "At the start of the river, there is <b>50bb</b> in the pot with 3 players remaining: UTG, MP, BTN.<br><br>UTG bets 25bb.<br>MP calls.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 4:1</b><br><b>Break-even equity: 20.00%</b><br><br>Pot before our call: 50 + 25 + 25 = <b>100bb</b>.<br>Additional call: 25 \u2212 0 = <b>25bb</b>.<br>Reward:risk = 100:25 = 4:1.<br>Equity = 25 / (100 + 25) = 20.00%.<br><br>Our call closes the betting on this street.",
+      "calculation": {
+        "pot_before_call": 100,
+        "call": 25,
+        "highest_bet": 25,
+        "hero_invested": 0,
+        "final_pot": 125,
+        "ratio": "4:1",
+        "ratio_to_one": 4.0,
+        "equity_fraction": "1/5",
+        "equity_percent": 20.0,
+        "players_still_to_act": [],
+        "contributions": {
+          "UTG": 25,
+          "MP": 25,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "UTG",
+            "amount": 25
+          },
+          {
+            "player": "MP",
+            "amount": 25
+          }
+        ]
+      }
+    },
+    {
+      "guid": "6c502ae7aff91c38cd75e12b",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 12,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "bet",
+            "to": 8
+          },
+          {
+            "player": "BTN",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 20
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the flop, there is <b>12bb</b> in the pot with 4 players remaining: SB, BB, UTG, BTN.<br><br>SB checks.<br>BB checks.<br>UTG bets 8bb.<br>BTN folds.<br>SB raises to 20bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 2:1</b><br><b>Break-even equity: 33.33%</b><br><br>Pot before our call: 12 + 8 + 20 = <b>40bb</b>.<br>Additional call: 20 \u2212 0 = <b>20bb</b>.<br>Reward:risk = 40:20 = 2:1.<br>Equity = 20 / (40 + 20) = 33.33%.<br><br>Calling does not close the action. Still to act: UTG. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 40,
+        "call": 20,
+        "highest_bet": 20,
+        "hero_invested": 0,
+        "final_pot": 60,
+        "ratio": "2:1",
+        "ratio_to_one": 2.0,
+        "equity_fraction": "1/3",
+        "equity_percent": 33.333333333333336,
+        "players_still_to_act": [
+          "UTG"
+        ],
+        "contributions": {
+          "SB": 20,
+          "BB": 0,
+          "UTG": 8,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "UTG",
+            "amount": 8
+          },
+          {
+            "player": "SB",
+            "amount": 20
+          }
+        ]
+      }
+    },
+    {
+      "guid": "8c448c69c827eb81c04efa7b",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 24,
+        "players": [
+          "BB",
+          "CO"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 6
+          },
+          {
+            "player": "CO",
+            "kind": "raise",
+            "to": 18
+          }
+        ],
+        "hero": "BB",
+        "kind": "facing-raise"
+      },
+      "question": "At the start of the river, there is <b>24bb</b> in the pot with 2 players remaining: BB, CO.<br><br>BB bets 6bb.<br>CO raises to 18bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 4:1</b><br><b>Break-even equity: 20.00%</b><br><br>Pot before our call: 24 + 6 + 18 = <b>48bb</b>.<br>Additional call: 18 \u2212 6 = <b>12bb</b>.<br>Reward:risk = 48:12 = 4:1.<br>Equity = 12 / (48 + 12) = 20.00%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street.",
+      "calculation": {
+        "pot_before_call": 48,
+        "call": 12,
+        "highest_bet": 18,
+        "hero_invested": 6,
+        "final_pot": 60,
+        "ratio": "4:1",
+        "ratio_to_one": 4.0,
+        "equity_fraction": "1/5",
+        "equity_percent": 20.0,
+        "players_still_to_act": [],
+        "contributions": {
+          "BB": 6,
+          "CO": 18
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 6
+          },
+          {
+            "player": "CO",
+            "amount": 18
+          }
+        ]
+      }
+    },
+    {
+      "guid": "9671eba37cbc769bfd7961cc",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 40,
+        "players": [
+          "SB",
+          "BB",
+          "UTG"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "bet",
+            "to": 27
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "raise",
+            "to": 108
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 189
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "UTG",
+        "kind": "reraise"
+      },
+      "question": "At the start of the flop, there is <b>40bb</b> in the pot with 3 players remaining: SB, BB, UTG.<br><br>SB bets 27bb.<br>BB calls.<br>UTG raises to 108bb total.<br>SB raises to 189bb total.<br>BB calls.<br><br>Action is on us in <b>UTG</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 526:81 (approximately 6.49:1)</b><br><b>Break-even equity: 13.34%</b><br><br>Pot before our call: 40 + 27 + 27 + 108 + 162 + 162 = <b>526bb</b>.<br>Additional call: 189 \u2212 108 = <b>81bb</b>.<br>Reward:risk = 526:81 = 526:81.<br>Equity = 81 / (526 + 81) = 13.34%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 526,
+        "call": 81,
+        "highest_bet": 189,
+        "hero_invested": 108,
+        "final_pot": 607,
+        "ratio": "526:81",
+        "ratio_to_one": 6.493827160493828,
+        "equity_fraction": "81/607",
+        "equity_percent": 13.344316309719934,
+        "players_still_to_act": [],
+        "contributions": {
+          "SB": 189,
+          "BB": 189,
+          "UTG": 108
+        },
+        "additions": [
+          {
+            "player": "SB",
+            "amount": 27
+          },
+          {
+            "player": "BB",
+            "amount": 27
+          },
+          {
+            "player": "UTG",
+            "amount": 108
+          },
+          {
+            "player": "SB",
+            "amount": 162
+          },
+          {
+            "player": "BB",
+            "amount": 162
+          }
+        ]
+      }
+    },
+    {
+      "guid": "e17c4926f222c4ad01ca633a",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 24,
+        "players": [
+          "UTG",
+          "CO"
+        ],
+        "actions": [
+          {
+            "player": "UTG",
+            "kind": "bet",
+            "to": 12
+          }
+        ],
+        "hero": "CO",
+        "kind": "bet"
+      },
+      "question": "At the start of the turn, there is <b>24bb</b> in the pot with 2 players remaining: UTG, CO.<br><br>UTG bets 12bb.<br><br>Action is on us in <b>CO</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 3:1</b><br><b>Break-even equity: 25.00%</b><br><br>Pot before our call: 24 + 12 = <b>36bb</b>.<br>Additional call: 12 \u2212 0 = <b>12bb</b>.<br>Reward:risk = 36:12 = 3:1.<br>Equity = 12 / (36 + 12) = 25.00%.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 36,
+        "call": 12,
+        "highest_bet": 12,
+        "hero_invested": 0,
+        "final_pot": 48,
+        "ratio": "3:1",
+        "ratio_to_one": 3.0,
+        "equity_fraction": "1/4",
+        "equity_percent": 25.0,
+        "players_still_to_act": [],
+        "contributions": {
+          "UTG": 12,
+          "CO": 0
+        },
+        "additions": [
+          {
+            "player": "UTG",
+            "amount": 12
+          }
+        ]
+      }
+    },
+    {
+      "guid": "36e199b9c217165d516368ff",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 80,
+        "players": [
+          "SB",
+          "BB",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "bet",
+            "to": 80
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 320
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the river, there is <b>80bb</b> in the pot with 4 players remaining: SB, BB, CO, BTN.<br><br>SB checks.<br>BB checks.<br>CO checks.<br>BTN bets 80bb.<br>SB raises to 320bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 3:2 (approximately 1.50:1)</b><br><b>Break-even equity: 40.00%</b><br><br>Pot before our call: 80 + 80 + 320 = <b>480bb</b>.<br>Additional call: 320 \u2212 0 = <b>320bb</b>.<br>Reward:risk = 480:320 = 3:2.<br>Equity = 320 / (480 + 320) = 40.00%.<br><br>Calling does not close the action. Still to act: CO, BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 480,
+        "call": 320,
+        "highest_bet": 320,
+        "hero_invested": 0,
+        "final_pot": 800,
+        "ratio": "3:2",
+        "ratio_to_one": 1.5,
+        "equity_fraction": "2/5",
+        "equity_percent": 40.0,
+        "players_still_to_act": [
+          "CO",
+          "BTN"
+        ],
+        "contributions": {
+          "SB": 320,
+          "BB": 0,
+          "CO": 0,
+          "BTN": 80
+        },
+        "additions": [
+          {
+            "player": "BTN",
+            "amount": 80
+          },
+          {
+            "player": "SB",
+            "amount": 320
+          }
+        ]
+      }
+    },
+    {
+      "guid": "4baf70dfa472f029340a6933",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 30,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 20
+          },
+          {
+            "player": "UTG",
+            "kind": "raise",
+            "to": 60
+          },
+          {
+            "player": "MP",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "BB",
+        "kind": "facing-raise"
+      },
+      "question": "At the start of the flop, there is <b>30bb</b> in the pot with 6 players remaining: SB, BB, UTG, MP, CO, BTN.<br><br>SB checks.<br>BB bets 20bb.<br>UTG raises to 60bb total.<br>MP calls.<br>CO calls.<br>BTN calls.<br>SB calls.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 35:4 (approximately 8.75:1)</b><br><b>Break-even equity: 10.26%</b><br><br>Pot before our call: 30 + 20 + 60 + 60 + 60 + 60 + 60 = <b>350bb</b>.<br>Additional call: 60 \u2212 20 = <b>40bb</b>.<br>Reward:risk = 350:40 = 35:4.<br>Equity = 40 / (350 + 40) = 10.26%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 350,
+        "call": 40,
+        "highest_bet": 60,
+        "hero_invested": 20,
+        "final_pot": 390,
+        "ratio": "35:4",
+        "ratio_to_one": 8.75,
+        "equity_fraction": "4/39",
+        "equity_percent": 10.256410256410257,
+        "players_still_to_act": [],
+        "contributions": {
+          "SB": 60,
+          "BB": 20,
+          "UTG": 60,
+          "MP": 60,
+          "CO": 60,
+          "BTN": 60
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 20
+          },
+          {
+            "player": "UTG",
+            "amount": 60
+          },
+          {
+            "player": "MP",
+            "amount": 60
+          },
+          {
+            "player": "CO",
+            "amount": 60
+          },
+          {
+            "player": "BTN",
+            "amount": 60
+          },
+          {
+            "player": "SB",
+            "amount": 60
+          }
+        ]
+      }
+    },
+    {
+      "guid": "8d41ab5ec2e2dc86e46f079b",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 40,
+        "players": [
+          "BB",
+          "UTG",
+          "MP",
+          "CO"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 20
+          },
+          {
+            "player": "UTG",
+            "kind": "raise",
+            "to": 40
+          },
+          {
+            "player": "MP",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "raise",
+            "to": 80
+          }
+        ],
+        "hero": "UTG",
+        "kind": "reraise"
+      },
+      "question": "At the start of the turn, there is <b>40bb</b> in the pot with 4 players remaining: BB, UTG, MP, CO.<br><br>BB bets 20bb.<br>UTG raises to 40bb total.<br>MP calls.<br>CO folds.<br>BB raises to 80bb total.<br><br>Action is on us in <b>UTG</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 5:1</b><br><b>Break-even equity: 16.67%</b><br><br>Pot before our call: 40 + 20 + 40 + 40 + 60 = <b>200bb</b>.<br>Additional call: 80 \u2212 40 = <b>40bb</b>.<br>Reward:risk = 200:40 = 5:1.<br>Equity = 40 / (200 + 40) = 16.67%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Calling does not close the action. Still to act: MP. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 200,
+        "call": 40,
+        "highest_bet": 80,
+        "hero_invested": 40,
+        "final_pot": 240,
+        "ratio": "5:1",
+        "ratio_to_one": 5.0,
+        "equity_fraction": "1/6",
+        "equity_percent": 16.666666666666668,
+        "players_still_to_act": [
+          "MP"
+        ],
+        "contributions": {
+          "BB": 80,
+          "UTG": 40,
+          "MP": 40,
+          "CO": 0
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 20
+          },
+          {
+            "player": "UTG",
+            "amount": 40
+          },
+          {
+            "player": "MP",
+            "amount": 40
+          },
+          {
+            "player": "BB",
+            "amount": 60
+          }
+        ]
+      }
+    },
+    {
+      "guid": "2fa82e2b7b5bf31c19567c95",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 40,
+        "players": [
+          "SB",
+          "UTG",
+          "MP",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "bet",
+            "to": 40
+          },
+          {
+            "player": "UTG",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "fold",
+            "to": 0
+          }
+        ],
+        "hero": "BTN",
+        "kind": "bet"
+      },
+      "question": "At the start of the river, there is <b>40bb</b> in the pot with 4 players remaining: SB, UTG, MP, BTN.<br><br>SB bets 40bb.<br>UTG calls.<br>MP folds.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 3:1</b><br><b>Break-even equity: 25.00%</b><br><br>Pot before our call: 40 + 40 + 40 = <b>120bb</b>.<br>Additional call: 40 \u2212 0 = <b>40bb</b>.<br>Reward:risk = 120:40 = 3:1.<br>Equity = 40 / (120 + 40) = 25.00%.<br><br>Our call closes the betting on this street.",
+      "calculation": {
+        "pot_before_call": 120,
+        "call": 40,
+        "highest_bet": 40,
+        "hero_invested": 0,
+        "final_pot": 160,
+        "ratio": "3:1",
+        "ratio_to_one": 3.0,
+        "equity_fraction": "1/4",
+        "equity_percent": 25.0,
+        "players_still_to_act": [],
+        "contributions": {
+          "SB": 40,
+          "UTG": 40,
+          "MP": 0,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "SB",
+            "amount": 40
+          },
+          {
+            "player": "UTG",
+            "amount": 40
+          }
+        ]
+      }
+    },
+    {
+      "guid": "848c612e20da4ac5d1fc37aa",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 20,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "bet",
+            "to": 10
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 30
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the flop, there is <b>20bb</b> in the pot with 6 players remaining: SB, BB, UTG, MP, CO, BTN.<br><br>SB checks.<br>BB checks.<br>UTG checks.<br>MP bets 10bb.<br>CO calls.<br>BTN calls.<br>SB raises to 30bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 8:3 (approximately 2.67:1)</b><br><b>Break-even equity: 27.27%</b><br><br>Pot before our call: 20 + 10 + 10 + 10 + 30 = <b>80bb</b>.<br>Additional call: 30 \u2212 0 = <b>30bb</b>.<br>Reward:risk = 80:30 = 8:3.<br>Equity = 30 / (80 + 30) = 27.27%.<br><br>Calling does not close the action. Still to act: UTG, MP, CO, BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 80,
+        "call": 30,
+        "highest_bet": 30,
+        "hero_invested": 0,
+        "final_pot": 110,
+        "ratio": "8:3",
+        "ratio_to_one": 2.6666666666666665,
+        "equity_fraction": "3/11",
+        "equity_percent": 27.272727272727273,
+        "players_still_to_act": [
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "contributions": {
+          "SB": 30,
+          "BB": 0,
+          "UTG": 0,
+          "MP": 10,
+          "CO": 10,
+          "BTN": 10
+        },
+        "additions": [
+          {
+            "player": "MP",
+            "amount": 10
+          },
+          {
+            "player": "CO",
+            "amount": 10
+          },
+          {
+            "player": "BTN",
+            "amount": 10
+          },
+          {
+            "player": "SB",
+            "amount": 30
+          }
+        ]
+      }
+    },
+    {
+      "guid": "f23a547795c262716df5610e",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 16,
+        "players": [
+          "BB",
+          "UTG",
+          "MP"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 4
+          },
+          {
+            "player": "UTG",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "raise",
+            "to": 8
+          }
+        ],
+        "hero": "BB",
+        "kind": "facing-raise"
+      },
+      "question": "At the start of the turn, there is <b>16bb</b> in the pot with 3 players remaining: BB, UTG, MP.<br><br>BB bets 4bb.<br>UTG folds.<br>MP raises to 8bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 7:1</b><br><b>Break-even equity: 12.50%</b><br><br>Pot before our call: 16 + 4 + 8 = <b>28bb</b>.<br>Additional call: 8 \u2212 4 = <b>4bb</b>.<br>Reward:risk = 28:4 = 7:1.<br>Equity = 4 / (28 + 4) = 12.50%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 28,
+        "call": 4,
+        "highest_bet": 8,
+        "hero_invested": 4,
+        "final_pot": 32,
+        "ratio": "7:1",
+        "ratio_to_one": 7.0,
+        "equity_fraction": "1/8",
+        "equity_percent": 12.5,
+        "players_still_to_act": [],
+        "contributions": {
+          "BB": 4,
+          "UTG": 0,
+          "MP": 8
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 4
+          },
+          {
+            "player": "MP",
+            "amount": 8
+          }
+        ]
+      }
+    },
+    {
+      "guid": "3fba5e0bfbf7d9135d35f33a",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 24,
+        "players": [
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 8
+          },
+          {
+            "player": "UTG",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "raise",
+            "to": 32
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "raise",
+            "to": 80
+          },
+          {
+            "player": "UTG",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "CO",
+        "kind": "reraise"
+      },
+      "question": "At the start of the river, there is <b>24bb</b> in the pot with 5 players remaining: BB, UTG, MP, CO, BTN.<br><br>BB bets 8bb.<br>UTG calls.<br>MP folds.<br>CO raises to 32bb total.<br>BTN calls.<br>BB raises to 80bb total.<br>UTG calls.<br><br>Action is on us in <b>CO</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 31:6 (approximately 5.17:1)</b><br><b>Break-even equity: 16.22%</b><br><br>Pot before our call: 24 + 8 + 8 + 32 + 32 + 72 + 72 = <b>248bb</b>.<br>Additional call: 80 \u2212 32 = <b>48bb</b>.<br>Reward:risk = 248:48 = 31:6.<br>Equity = 48 / (248 + 48) = 16.22%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Calling does not close the action. Still to act: BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 248,
+        "call": 48,
+        "highest_bet": 80,
+        "hero_invested": 32,
+        "final_pot": 296,
+        "ratio": "31:6",
+        "ratio_to_one": 5.166666666666667,
+        "equity_fraction": "6/37",
+        "equity_percent": 16.216216216216218,
+        "players_still_to_act": [
+          "BTN"
+        ],
+        "contributions": {
+          "BB": 80,
+          "UTG": 80,
+          "MP": 0,
+          "CO": 32,
+          "BTN": 32
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 8
+          },
+          {
+            "player": "UTG",
+            "amount": 8
+          },
+          {
+            "player": "CO",
+            "amount": 32
+          },
+          {
+            "player": "BTN",
+            "amount": 32
+          },
+          {
+            "player": "BB",
+            "amount": 72
+          },
+          {
+            "player": "UTG",
+            "amount": 72
+          }
+        ]
+      }
+    },
+    {
+      "guid": "54efb29552415a8a58f27cd8",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 20,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "bet",
+            "to": 5
+          }
+        ],
+        "hero": "BTN",
+        "kind": "bet"
+      },
+      "question": "At the start of the flop, there is <b>20bb</b> in the pot with 5 players remaining: SB, BB, UTG, MP, BTN.<br><br>SB checks.<br>BB checks.<br>UTG checks.<br>MP bets 5bb.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 5:1</b><br><b>Break-even equity: 16.67%</b><br><br>Pot before our call: 20 + 5 = <b>25bb</b>.<br>Additional call: 5 \u2212 0 = <b>5bb</b>.<br>Reward:risk = 25:5 = 5:1.<br>Equity = 5 / (25 + 5) = 16.67%.<br><br>Calling does not close the action. Still to act: SB, BB, UTG. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 25,
+        "call": 5,
+        "highest_bet": 5,
+        "hero_invested": 0,
+        "final_pot": 30,
+        "ratio": "5:1",
+        "ratio_to_one": 5.0,
+        "equity_fraction": "1/6",
+        "equity_percent": 16.666666666666668,
+        "players_still_to_act": [
+          "SB",
+          "BB",
+          "UTG"
+        ],
+        "contributions": {
+          "SB": 0,
+          "BB": 0,
+          "UTG": 0,
+          "MP": 5,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "MP",
+            "amount": 5
+          }
+        ]
+      }
+    },
+    {
+      "guid": "3ac92177e3d949bff3776050",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 20,
+        "players": [
+          "SB",
+          "BB",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "bet",
+            "to": 15
+          },
+          {
+            "player": "CO",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 45
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the turn, there is <b>20bb</b> in the pot with 5 players remaining: SB, BB, MP, CO, BTN.<br><br>SB checks.<br>BB checks.<br>MP bets 15bb.<br>CO folds.<br>BTN calls.<br>SB raises to 45bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 19:9 (approximately 2.11:1)</b><br><b>Break-even equity: 32.14%</b><br><br>Pot before our call: 20 + 15 + 15 + 45 = <b>95bb</b>.<br>Additional call: 45 \u2212 0 = <b>45bb</b>.<br>Reward:risk = 95:45 = 19:9.<br>Equity = 45 / (95 + 45) = 32.14%.<br><br>Calling does not close the action. Still to act: MP, BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 95,
+        "call": 45,
+        "highest_bet": 45,
+        "hero_invested": 0,
+        "final_pot": 140,
+        "ratio": "19:9",
+        "ratio_to_one": 2.111111111111111,
+        "equity_fraction": "9/28",
+        "equity_percent": 32.142857142857146,
+        "players_still_to_act": [
+          "MP",
+          "BTN"
+        ],
+        "contributions": {
+          "SB": 45,
+          "BB": 0,
+          "MP": 15,
+          "CO": 0,
+          "BTN": 15
+        },
+        "additions": [
+          {
+            "player": "MP",
+            "amount": 15
+          },
+          {
+            "player": "BTN",
+            "amount": 15
+          },
+          {
+            "player": "SB",
+            "amount": 45
+          }
+        ]
+      }
+    },
+    {
+      "guid": "b793eaf9389c9d8f976896b3",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 6,
+        "players": [
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "bet",
+            "to": 2
+          },
+          {
+            "player": "MP",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "raise",
+            "to": 4
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "UTG",
+        "kind": "facing-raise"
+      },
+      "question": "At the start of the river, there is <b>6bb</b> in the pot with 5 players remaining: BB, UTG, MP, CO, BTN.<br><br>BB checks.<br>UTG bets 2bb.<br>MP calls.<br>CO raises to 4bb total.<br>BTN calls.<br>BB calls.<br><br>Action is on us in <b>UTG</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 11:1</b><br><b>Break-even equity: 8.33%</b><br><br>Pot before our call: 6 + 2 + 2 + 4 + 4 + 4 = <b>22bb</b>.<br>Additional call: 4 \u2212 2 = <b>2bb</b>.<br>Reward:risk = 22:2 = 11:1.<br>Equity = 2 / (22 + 2) = 8.33%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Calling does not close the action. Still to act: MP. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 22,
+        "call": 2,
+        "highest_bet": 4,
+        "hero_invested": 2,
+        "final_pot": 24,
+        "ratio": "11:1",
+        "ratio_to_one": 11.0,
+        "equity_fraction": "1/12",
+        "equity_percent": 8.333333333333334,
+        "players_still_to_act": [
+          "MP"
+        ],
+        "contributions": {
+          "BB": 4,
+          "UTG": 2,
+          "MP": 2,
+          "CO": 4,
+          "BTN": 4
+        },
+        "additions": [
+          {
+            "player": "UTG",
+            "amount": 2
+          },
+          {
+            "player": "MP",
+            "amount": 2
+          },
+          {
+            "player": "CO",
+            "amount": 4
+          },
+          {
+            "player": "BTN",
+            "amount": 4
+          },
+          {
+            "player": "BB",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    {
+      "guid": "86e5808c6f0455eb9114df5e",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 6,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "bet",
+            "to": 2
+          },
+          {
+            "player": "BB",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "raise",
+            "to": 6
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 10
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "BTN",
+        "kind": "reraise"
+      },
+      "question": "At the start of the flop, there is <b>6bb</b> in the pot with 6 players remaining: SB, BB, UTG, MP, CO, BTN.<br><br>SB bets 2bb.<br>BB folds.<br>UTG folds.<br>MP folds.<br>CO calls.<br>BTN raises to 6bb total.<br>SB raises to 10bb total.<br>CO calls.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 8:1</b><br><b>Break-even equity: 11.11%</b><br><br>Pot before our call: 6 + 2 + 2 + 6 + 8 + 8 = <b>32bb</b>.<br>Additional call: 10 \u2212 6 = <b>4bb</b>.<br>Reward:risk = 32:4 = 8:1.<br>Equity = 4 / (32 + 4) = 11.11%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 32,
+        "call": 4,
+        "highest_bet": 10,
+        "hero_invested": 6,
+        "final_pot": 36,
+        "ratio": "8:1",
+        "ratio_to_one": 8.0,
+        "equity_fraction": "1/9",
+        "equity_percent": 11.11111111111111,
+        "players_still_to_act": [],
+        "contributions": {
+          "SB": 10,
+          "BB": 0,
+          "UTG": 0,
+          "MP": 0,
+          "CO": 10,
+          "BTN": 6
+        },
+        "additions": [
+          {
+            "player": "SB",
+            "amount": 2
+          },
+          {
+            "player": "CO",
+            "amount": 2
+          },
+          {
+            "player": "BTN",
+            "amount": 6
+          },
+          {
+            "player": "SB",
+            "amount": 8
+          },
+          {
+            "player": "CO",
+            "amount": 8
+          }
+        ]
+      }
+    },
+    {
+      "guid": "c8640bef6a10bc430e5aac24",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 10,
+        "players": [
+          "SB",
+          "UTG",
+          "MP",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "bet",
+            "to": 10
+          }
+        ],
+        "hero": "BTN",
+        "kind": "bet"
+      },
+      "question": "At the start of the turn, there is <b>10bb</b> in the pot with 4 players remaining: SB, UTG, MP, BTN.<br><br>SB checks.<br>UTG checks.<br>MP bets 10bb.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 2:1</b><br><b>Break-even equity: 33.33%</b><br><br>Pot before our call: 10 + 10 = <b>20bb</b>.<br>Additional call: 10 \u2212 0 = <b>10bb</b>.<br>Reward:risk = 20:10 = 2:1.<br>Equity = 10 / (20 + 10) = 33.33%.<br><br>Calling does not close the action. Still to act: SB, UTG. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 20,
+        "call": 10,
+        "highest_bet": 10,
+        "hero_invested": 0,
+        "final_pot": 30,
+        "ratio": "2:1",
+        "ratio_to_one": 2.0,
+        "equity_fraction": "1/3",
+        "equity_percent": 33.333333333333336,
+        "players_still_to_act": [
+          "SB",
+          "UTG"
+        ],
+        "contributions": {
+          "SB": 0,
+          "UTG": 0,
+          "MP": 10,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "MP",
+            "amount": 10
+          }
+        ]
+      }
+    },
+    {
+      "guid": "d39a69994b0a0b7c524e5dd3",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 24,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "bet",
+            "to": 16
+          },
+          {
+            "player": "BTN",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 64
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the river, there is <b>24bb</b> in the pot with 5 players remaining: SB, BB, UTG, CO, BTN.<br><br>SB checks.<br>BB checks.<br>UTG checks.<br>CO bets 16bb.<br>BTN folds.<br>SB raises to 64bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 13:8 (approximately 1.62:1)</b><br><b>Break-even equity: 38.10%</b><br><br>Pot before our call: 24 + 16 + 64 = <b>104bb</b>.<br>Additional call: 64 \u2212 0 = <b>64bb</b>.<br>Reward:risk = 104:64 = 13:8.<br>Equity = 64 / (104 + 64) = 38.10%.<br><br>Calling does not close the action. Still to act: UTG, CO. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 104,
+        "call": 64,
+        "highest_bet": 64,
+        "hero_invested": 0,
+        "final_pot": 168,
+        "ratio": "13:8",
+        "ratio_to_one": 1.625,
+        "equity_fraction": "8/21",
+        "equity_percent": 38.095238095238095,
+        "players_still_to_act": [
+          "UTG",
+          "CO"
+        ],
+        "contributions": {
+          "SB": 64,
+          "BB": 0,
+          "UTG": 0,
+          "CO": 16,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "CO",
+            "amount": 16
+          },
+          {
+            "player": "SB",
+            "amount": 64
+          }
+        ]
+      }
+    },
+    {
+      "guid": "aefb506f51a8de8ba5b90006",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 30,
+        "players": [
+          "BB",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 8
+          },
+          {
+            "player": "BTN",
+            "kind": "raise",
+            "to": 24
+          }
+        ],
+        "hero": "BB",
+        "kind": "facing-raise"
+      },
+      "question": "At the start of the flop, there is <b>30bb</b> in the pot with 2 players remaining: BB, BTN.<br><br>BB bets 8bb.<br>BTN raises to 24bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 31:8 (approximately 3.88:1)</b><br><b>Break-even equity: 20.51%</b><br><br>Pot before our call: 30 + 8 + 24 = <b>62bb</b>.<br>Additional call: 24 \u2212 8 = <b>16bb</b>.<br>Reward:risk = 62:16 = 31:8.<br>Equity = 16 / (62 + 16) = 20.51%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 62,
+        "call": 16,
+        "highest_bet": 24,
+        "hero_invested": 8,
+        "final_pot": 78,
+        "ratio": "31:8",
+        "ratio_to_one": 3.875,
+        "equity_fraction": "8/39",
+        "equity_percent": 20.512820512820515,
+        "players_still_to_act": [],
+        "contributions": {
+          "BB": 8,
+          "BTN": 24
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 8
+          },
+          {
+            "player": "BTN",
+            "amount": 24
+          }
+        ]
+      }
+    },
+    {
+      "guid": "ead5a27d741629207590c63f",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 80,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "bet",
+            "to": 60
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "raise",
+            "to": 120
+          },
+          {
+            "player": "MP",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 240
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "UTG",
+        "kind": "reraise"
+      },
+      "question": "At the start of the turn, there is <b>80bb</b> in the pot with 6 players remaining: SB, BB, UTG, MP, CO, BTN.<br><br>SB bets 60bb.<br>BB calls.<br>UTG raises to 120bb total.<br>MP calls.<br>CO calls.<br>BTN calls.<br>SB raises to 240bb total.<br>BB calls.<br><br>Action is on us in <b>UTG</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 26:3 (approximately 8.67:1)</b><br><b>Break-even equity: 10.34%</b><br><br>Pot before our call: 80 + 60 + 60 + 120 + 120 + 120 + 120 + 180 + 180 = <b>1040bb</b>.<br>Additional call: 240 \u2212 120 = <b>120bb</b>.<br>Reward:risk = 1040:120 = 26:3.<br>Equity = 120 / (1040 + 120) = 10.34%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Calling does not close the action. Still to act: MP, CO, BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 1040,
+        "call": 120,
+        "highest_bet": 240,
+        "hero_invested": 120,
+        "final_pot": 1160,
+        "ratio": "26:3",
+        "ratio_to_one": 8.666666666666666,
+        "equity_fraction": "3/29",
+        "equity_percent": 10.344827586206897,
+        "players_still_to_act": [
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "contributions": {
+          "SB": 240,
+          "BB": 240,
+          "UTG": 120,
+          "MP": 120,
+          "CO": 120,
+          "BTN": 120
+        },
+        "additions": [
+          {
+            "player": "SB",
+            "amount": 60
+          },
+          {
+            "player": "BB",
+            "amount": 60
+          },
+          {
+            "player": "UTG",
+            "amount": 120
+          },
+          {
+            "player": "MP",
+            "amount": 120
+          },
+          {
+            "player": "CO",
+            "amount": 120
+          },
+          {
+            "player": "BTN",
+            "amount": 120
+          },
+          {
+            "player": "SB",
+            "amount": 180
+          },
+          {
+            "player": "BB",
+            "amount": 180
+          }
+        ]
+      }
+    },
+    {
+      "guid": "16dc96855b7f1b21e19bbeab",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 6,
+        "players": [
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "bet",
+            "to": 2
+          },
+          {
+            "player": "CO",
+            "kind": "fold",
+            "to": 0
+          }
+        ],
+        "hero": "BTN",
+        "kind": "bet"
+      },
+      "question": "At the start of the river, there is <b>6bb</b> in the pot with 5 players remaining: BB, UTG, MP, CO, BTN.<br><br>BB checks.<br>UTG checks.<br>MP bets 2bb.<br>CO folds.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 4:1</b><br><b>Break-even equity: 20.00%</b><br><br>Pot before our call: 6 + 2 = <b>8bb</b>.<br>Additional call: 2 \u2212 0 = <b>2bb</b>.<br>Reward:risk = 8:2 = 4:1.<br>Equity = 2 / (8 + 2) = 20.00%.<br><br>Calling does not close the action. Still to act: BB, UTG. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 8,
+        "call": 2,
+        "highest_bet": 2,
+        "hero_invested": 0,
+        "final_pot": 10,
+        "ratio": "4:1",
+        "ratio_to_one": 4.0,
+        "equity_fraction": "1/5",
+        "equity_percent": 20.0,
+        "players_still_to_act": [
+          "BB",
+          "UTG"
+        ],
+        "contributions": {
+          "BB": 0,
+          "UTG": 0,
+          "MP": 2,
+          "CO": 0,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "MP",
+            "amount": 2
+          }
+        ]
+      }
+    },
+    {
+      "guid": "83c52a6cfbe32ac9828bb254",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 10,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "bet",
+            "to": 7
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 28
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the flop, there is <b>10bb</b> in the pot with 5 players remaining: SB, BB, UTG, MP, CO.<br><br>SB checks.<br>BB checks.<br>UTG checks.<br>MP bets 7bb.<br>CO calls.<br>SB raises to 28bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 13:7 (approximately 1.86:1)</b><br><b>Break-even equity: 35.00%</b><br><br>Pot before our call: 10 + 7 + 7 + 28 = <b>52bb</b>.<br>Additional call: 28 \u2212 0 = <b>28bb</b>.<br>Reward:risk = 52:28 = 13:7.<br>Equity = 28 / (52 + 28) = 35.00%.<br><br>Calling does not close the action. Still to act: UTG, MP, CO. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 52,
+        "call": 28,
+        "highest_bet": 28,
+        "hero_invested": 0,
+        "final_pot": 80,
+        "ratio": "13:7",
+        "ratio_to_one": 1.8571428571428572,
+        "equity_fraction": "7/20",
+        "equity_percent": 35.0,
+        "players_still_to_act": [
+          "UTG",
+          "MP",
+          "CO"
+        ],
+        "contributions": {
+          "SB": 28,
+          "BB": 0,
+          "UTG": 0,
+          "MP": 7,
+          "CO": 7
+        },
+        "additions": [
+          {
+            "player": "MP",
+            "amount": 7
+          },
+          {
+            "player": "CO",
+            "amount": 7
+          },
+          {
+            "player": "SB",
+            "amount": 28
+          }
+        ]
+      }
+    },
+    {
+      "guid": "bf9e65ce99f06b0ad7ec73cc",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 10,
+        "players": [
+          "BB",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 2
+          },
+          {
+            "player": "CO",
+            "kind": "raise",
+            "to": 4
+          },
+          {
+            "player": "BTN",
+            "kind": "fold",
+            "to": 0
+          }
+        ],
+        "hero": "BB",
+        "kind": "facing-raise"
+      },
+      "question": "At the start of the turn, there is <b>10bb</b> in the pot with 3 players remaining: BB, CO, BTN.<br><br>BB bets 2bb.<br>CO raises to 4bb total.<br>BTN folds.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 8:1</b><br><b>Break-even equity: 11.11%</b><br><br>Pot before our call: 10 + 2 + 4 = <b>16bb</b>.<br>Additional call: 4 \u2212 2 = <b>2bb</b>.<br>Reward:risk = 16:2 = 8:1.<br>Equity = 2 / (16 + 2) = 11.11%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 16,
+        "call": 2,
+        "highest_bet": 4,
+        "hero_invested": 2,
+        "final_pot": 18,
+        "ratio": "8:1",
+        "ratio_to_one": 8.0,
+        "equity_fraction": "1/9",
+        "equity_percent": 11.11111111111111,
+        "players_still_to_act": [],
+        "contributions": {
+          "BB": 2,
+          "CO": 4,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 2
+          },
+          {
+            "player": "CO",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    {
+      "guid": "f907d94d38edfd32ec23cd04",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 16,
+        "players": [
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 16
+          },
+          {
+            "player": "UTG",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "raise",
+            "to": 64
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "raise",
+            "to": 160
+          }
+        ],
+        "hero": "MP",
+        "kind": "reraise"
+      },
+      "question": "At the start of the river, there is <b>16bb</b> in the pot with 5 players remaining: BB, UTG, MP, CO, BTN.<br><br>BB bets 16bb.<br>UTG folds.<br>MP raises to 64bb total.<br>CO calls.<br>BTN calls.<br>BB raises to 160bb total.<br><br>Action is on us in <b>MP</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 23:6 (approximately 3.83:1)</b><br><b>Break-even equity: 20.69%</b><br><br>Pot before our call: 16 + 16 + 64 + 64 + 64 + 144 = <b>368bb</b>.<br>Additional call: 160 \u2212 64 = <b>96bb</b>.<br>Reward:risk = 368:96 = 23:6.<br>Equity = 96 / (368 + 96) = 20.69%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Calling does not close the action. Still to act: CO, BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 368,
+        "call": 96,
+        "highest_bet": 160,
+        "hero_invested": 64,
+        "final_pot": 464,
+        "ratio": "23:6",
+        "ratio_to_one": 3.8333333333333335,
+        "equity_fraction": "6/29",
+        "equity_percent": 20.689655172413794,
+        "players_still_to_act": [
+          "CO",
+          "BTN"
+        ],
+        "contributions": {
+          "BB": 160,
+          "UTG": 0,
+          "MP": 64,
+          "CO": 64,
+          "BTN": 64
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 16
+          },
+          {
+            "player": "MP",
+            "amount": 64
+          },
+          {
+            "player": "CO",
+            "amount": 64
+          },
+          {
+            "player": "BTN",
+            "amount": 64
+          },
+          {
+            "player": "BB",
+            "amount": 144
+          }
+        ]
+      }
+    },
+    {
+      "guid": "a51751311b07353f25db54f6",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 20,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "CO"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "bet",
+            "to": 13
+          }
+        ],
+        "hero": "UTG",
+        "kind": "bet"
+      },
+      "question": "At the start of the flop, there is <b>20bb</b> in the pot with 4 players remaining: SB, BB, UTG, CO.<br><br>SB checks.<br>BB bets 13bb.<br><br>Action is on us in <b>UTG</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 33:13 (approximately 2.54:1)</b><br><b>Break-even equity: 28.26%</b><br><br>Pot before our call: 20 + 13 = <b>33bb</b>.<br>Additional call: 13 \u2212 0 = <b>13bb</b>.<br>Reward:risk = 33:13 = 33:13.<br>Equity = 13 / (33 + 13) = 28.26%.<br><br>Calling does not close the action. Still to act: CO, SB. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 33,
+        "call": 13,
+        "highest_bet": 13,
+        "hero_invested": 0,
+        "final_pot": 46,
+        "ratio": "33:13",
+        "ratio_to_one": 2.5384615384615383,
+        "equity_fraction": "13/46",
+        "equity_percent": 28.26086956521739,
+        "players_still_to_act": [
+          "CO",
+          "SB"
+        ],
+        "contributions": {
+          "SB": 0,
+          "BB": 13,
+          "UTG": 0,
+          "CO": 0
+        },
+        "additions": [
+          {
+            "player": "BB",
+            "amount": 13
+          }
+        ]
+      }
+    },
+    {
+      "guid": "c715caf765fbf4aa971587fe",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 100,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "bet",
+            "to": 25
+          },
+          {
+            "player": "MP",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 75
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the turn, there is <b>100bb</b> in the pot with 6 players remaining: SB, BB, UTG, MP, CO, BTN.<br><br>SB checks.<br>BB checks.<br>UTG bets 25bb.<br>MP folds.<br>CO calls.<br>BTN calls.<br>SB raises to 75bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 10:3 (approximately 3.33:1)</b><br><b>Break-even equity: 23.08%</b><br><br>Pot before our call: 100 + 25 + 25 + 25 + 75 = <b>250bb</b>.<br>Additional call: 75 \u2212 0 = <b>75bb</b>.<br>Reward:risk = 250:75 = 10:3.<br>Equity = 75 / (250 + 75) = 23.08%.<br><br>Calling does not close the action. Still to act: UTG, CO, BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 250,
+        "call": 75,
+        "highest_bet": 75,
+        "hero_invested": 0,
+        "final_pot": 325,
+        "ratio": "10:3",
+        "ratio_to_one": 3.3333333333333335,
+        "equity_fraction": "3/13",
+        "equity_percent": 23.076923076923077,
+        "players_still_to_act": [
+          "UTG",
+          "CO",
+          "BTN"
+        ],
+        "contributions": {
+          "SB": 75,
+          "BB": 0,
+          "UTG": 25,
+          "MP": 0,
+          "CO": 25,
+          "BTN": 25
+        },
+        "additions": [
+          {
+            "player": "UTG",
+            "amount": 25
+          },
+          {
+            "player": "CO",
+            "amount": 25
+          },
+          {
+            "player": "BTN",
+            "amount": 25
+          },
+          {
+            "player": "SB",
+            "amount": 75
+          }
+        ]
+      }
+    },
+    {
+      "guid": "2a9ab2341ba61ecee810aa67",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 100,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "bet",
+            "to": 33
+          },
+          {
+            "player": "MP",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "raise",
+            "to": 132
+          },
+          {
+            "player": "SB",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "UTG",
+        "kind": "facing-raise"
+      },
+      "question": "At the start of the river, there is <b>100bb</b> in the pot with 6 players remaining: SB, BB, UTG, MP, CO, BTN.<br><br>SB checks.<br>BB checks.<br>UTG bets 33bb.<br>MP folds.<br>CO calls.<br>BTN raises to 132bb total.<br>SB folds.<br>BB calls.<br><br>Action is on us in <b>UTG</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 430:99 (approximately 4.34:1)</b><br><b>Break-even equity: 18.71%</b><br><br>Pot before our call: 100 + 33 + 33 + 132 + 132 = <b>430bb</b>.<br>Additional call: 132 \u2212 33 = <b>99bb</b>.<br>Reward:risk = 430:99 = 430:99.<br>Equity = 99 / (430 + 99) = 18.71%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Calling does not close the action. Still to act: CO. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 430,
+        "call": 99,
+        "highest_bet": 132,
+        "hero_invested": 33,
+        "final_pot": 529,
+        "ratio": "430:99",
+        "ratio_to_one": 4.343434343434343,
+        "equity_fraction": "99/529",
+        "equity_percent": 18.714555765595463,
+        "players_still_to_act": [
+          "CO"
+        ],
+        "contributions": {
+          "SB": 0,
+          "BB": 132,
+          "UTG": 33,
+          "MP": 0,
+          "CO": 33,
+          "BTN": 132
+        },
+        "additions": [
+          {
+            "player": "UTG",
+            "amount": 33
+          },
+          {
+            "player": "CO",
+            "amount": 33
+          },
+          {
+            "player": "BTN",
+            "amount": 132
+          },
+          {
+            "player": "BB",
+            "amount": 132
+          }
+        ]
+      }
+    },
+    {
+      "guid": "bd0858059f063fd864f4f473",
+      "scenario": {
+        "street": "flop",
+        "starting_pot": 60,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "bet",
+            "to": 40
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "fold",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "raise",
+            "to": 160
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 400
+          },
+          {
+            "player": "BB",
+            "kind": "call",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "fold",
+            "to": 0
+          }
+        ],
+        "hero": "BTN",
+        "kind": "reraise"
+      },
+      "question": "At the start of the flop, there is <b>60bb</b> in the pot with 5 players remaining: SB, BB, UTG, MP, BTN.<br><br>SB bets 40bb.<br>BB calls.<br>UTG calls.<br>MP folds.<br>BTN raises to 160bb total.<br>SB raises to 400bb total.<br>BB calls.<br>UTG folds.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 53:12 (approximately 4.42:1)</b><br><b>Break-even equity: 18.46%</b><br><br>Pot before our call: 60 + 40 + 40 + 40 + 160 + 360 + 360 = <b>1060bb</b>.<br>Additional call: 400 \u2212 160 = <b>240bb</b>.<br>Reward:risk = 1060:240 = 53:12.<br>Equity = 240 / (1060 + 240) = 18.46%.<br>Our earlier contribution is already in the pot; only the extra call is the cost.<br><br>Our call closes the betting on this street. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 1060,
+        "call": 240,
+        "highest_bet": 400,
+        "hero_invested": 160,
+        "final_pot": 1300,
+        "ratio": "53:12",
+        "ratio_to_one": 4.416666666666667,
+        "equity_fraction": "12/65",
+        "equity_percent": 18.46153846153846,
+        "players_still_to_act": [],
+        "contributions": {
+          "SB": 400,
+          "BB": 400,
+          "UTG": 40,
+          "MP": 0,
+          "BTN": 160
+        },
+        "additions": [
+          {
+            "player": "SB",
+            "amount": 40
+          },
+          {
+            "player": "BB",
+            "amount": 40
+          },
+          {
+            "player": "UTG",
+            "amount": 40
+          },
+          {
+            "player": "BTN",
+            "amount": 160
+          },
+          {
+            "player": "SB",
+            "amount": 360
+          },
+          {
+            "player": "BB",
+            "amount": 360
+          }
+        ]
+      }
+    },
+    {
+      "guid": "b3520069044aaeec13953d82",
+      "scenario": {
+        "street": "turn",
+        "starting_pot": 40,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "MP",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "MP",
+            "kind": "bet",
+            "to": 20
+          },
+          {
+            "player": "CO",
+            "kind": "call",
+            "to": 0
+          }
+        ],
+        "hero": "BTN",
+        "kind": "bet"
+      },
+      "question": "At the start of the turn, there is <b>40bb</b> in the pot with 6 players remaining: SB, BB, UTG, MP, CO, BTN.<br><br>SB checks.<br>BB checks.<br>UTG checks.<br>MP bets 20bb.<br>CO calls.<br><br>Action is on us in <b>BTN</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 4:1</b><br><b>Break-even equity: 20.00%</b><br><br>Pot before our call: 40 + 20 + 20 = <b>80bb</b>.<br>Additional call: 20 \u2212 0 = <b>20bb</b>.<br>Reward:risk = 80:20 = 4:1.<br>Equity = 20 / (80 + 20) = 20.00%.<br><br>Calling does not close the action. Still to act: SB, BB, UTG. They may fold, call, or raise. Do not count hypothetical future calls in the current pot. Future betting can change the value of calling; this is the immediate price only.",
+      "calculation": {
+        "pot_before_call": 80,
+        "call": 20,
+        "highest_bet": 20,
+        "hero_invested": 0,
+        "final_pot": 100,
+        "ratio": "4:1",
+        "ratio_to_one": 4.0,
+        "equity_fraction": "1/5",
+        "equity_percent": 20.0,
+        "players_still_to_act": [
+          "SB",
+          "BB",
+          "UTG"
+        ],
+        "contributions": {
+          "SB": 0,
+          "BB": 0,
+          "UTG": 0,
+          "MP": 20,
+          "CO": 20,
+          "BTN": 0
+        },
+        "additions": [
+          {
+            "player": "MP",
+            "amount": 20
+          },
+          {
+            "player": "CO",
+            "amount": 20
+          }
+        ]
+      }
+    },
+    {
+      "guid": "e875ae8c44adf1ec5599f1f7",
+      "scenario": {
+        "street": "river",
+        "starting_pot": 30,
+        "players": [
+          "SB",
+          "BB",
+          "UTG",
+          "CO",
+          "BTN"
+        ],
+        "actions": [
+          {
+            "player": "SB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BB",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "UTG",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "CO",
+            "kind": "check",
+            "to": 0
+          },
+          {
+            "player": "BTN",
+            "kind": "bet",
+            "to": 22
+          },
+          {
+            "player": "SB",
+            "kind": "raise",
+            "to": 88
+          }
+        ],
+        "hero": "BB",
+        "kind": "check-raise"
+      },
+      "question": "At the start of the river, there is <b>30bb</b> in the pot with 5 players remaining: SB, BB, UTG, CO, BTN.<br><br>SB checks.<br>BB checks.<br>UTG checks.<br>CO checks.<br>BTN bets 22bb.<br>SB raises to 88bb total.<br><br>Action is on us in <b>BB</b>. What are our immediate pot odds and break-even equity?<br><br><small>Ignore rake. Everyone can cover all bets; no side pots.</small>",
+      "answer": "<b>Pot odds: 35:22 (approximately 1.59:1)</b><br><b>Break-even equity: 38.60%</b><br><br>Pot before our call: 30 + 22 + 88 = <b>140bb</b>.<br>Additional call: 88 \u2212 0 = <b>88bb</b>.<br>Reward:risk = 140:88 = 35:22.<br>Equity = 88 / (140 + 88) = 38.60%.<br><br>Calling does not close the action. Still to act: UTG, CO, BTN. They may fold, call, or raise. Do not count hypothetical future calls in the current pot.",
+      "calculation": {
+        "pot_before_call": 140,
+        "call": 88,
+        "highest_bet": 88,
+        "hero_invested": 0,
+        "final_pot": 228,
+        "ratio": "35:22",
+        "ratio_to_one": 1.5909090909090908,
+        "equity_fraction": "22/57",
+        "equity_percent": 38.59649122807018,
+        "players_still_to_act": [
+          "UTG",
+          "CO",
+          "BTN"
+        ],
+        "contributions": {
+          "SB": 88,
+          "BB": 0,
+          "UTG": 0,
+          "CO": 0,
+          "BTN": 22
+        },
+        "additions": [
+          {
+            "player": "BTN",
+            "amount": 22
+          },
+          {
+            "player": "SB",
+            "amount": 88
+          }
+        ]
+      }
+    }
+  ]
+}

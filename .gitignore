@@ -1,0 +1,21 @@
+# Private, local-only agent instructions.
+AGENTS.md
+
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Keep personal collections, review history, and generated batches out of Git.
+*.anki2*
+*.colpkg
+*.db2*
+collection.media/
+backups/
+output/
+*.apkg
+!examples/*.apkg
+*.import.log
