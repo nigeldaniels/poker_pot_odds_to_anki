@@ -1,6 +1,6 @@
 # Poker pot odds to Anki
 
-A Codex skill and Python program that generate poker pot-odds questions and turn them into an Anki deck. Each card has a betting scenario on the front and a worked answer on the back: the current pot, additional call amount, reward-to-risk ratio, and break-even equity.
+A Codex skill and Python program that generate poker pot-odds questions and turns them into an Anki deck. Each card has a betting scenario on the front and a worked answer on the back: the current pot, additional call amount, reward-to-risk ratio, and break-even equity.
 
 ## Try the example deck
 
