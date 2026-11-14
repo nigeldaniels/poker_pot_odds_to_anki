@@ -97,25 +97,6 @@ For a pot of **P** before calling and an additional call cost of **C**, pot odds
 
 These are immediate pot-price drills with sufficient stacks, no rake, no all-ins, and no side pots. Flop/turn answers note that future betting affects the value of calling. The questions do not estimate hand equity or recommend whether to call.
 
-## Source map and tests
-
-| File | Lines | Responsibility |
-| --- | ---: | --- |
-| `scripts/pot_odds.py` | 15 | CLI entrypoint and expected-error reporting |
-| `scripts/poker_odds/cli.py` | 56 | Argument parsing and command orchestration |
-| `scripts/poker_odds/batch.py` | 36 | Package/manifest creation workflow |
-| `scripts/poker_odds/models.py` | 33 | Hand-history values and stable GUIDs |
-| `scripts/poker_odds/generation.py` | 130 | Seeded hand templates and batch generation |
-| `scripts/poker_odds/accounting.py` | 97 | Betting state, legal actions, and exact ratios |
-| `scripts/poker_odds/rendering.py` | 47 | Question and worked-answer HTML |
-| `scripts/poker_odds/anki_package.py` | 54 | Native package export from a temporary collection |
-| `scripts/poker_odds/runtime.py` | 63 | Runtime discovery, profile defaults, and GUI launch |
-| `scripts/poker_odds/verification.py` | 43 | Read-only verification of imported GUIDs/decks |
-| `scripts/poker_odds/__init__.py` | 1 | Package marker |
-| `tests/test_pot_odds.py` | 180 | Accounting, reproducibility, package import, and progress preservation |
-
-Run accounting tests using the standard library:
-
 ```bash
 PYTHONPATH=scripts python3 -m unittest discover -s tests -v
 ```
